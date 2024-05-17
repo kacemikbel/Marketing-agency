@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+body{
+  font-family: "OregonDry Normal", !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.loader {
+    display: block;
+    width: 84px;
+    height: 84px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .loader:before , .loader:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgb(27, 27, 207);
+    transform: translate(-50% , -100%)  scale(0);
+    animation: push_401 2s infinite linear;
+  }
+  
+  .loader:after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes push_401 {
+    0% , 50% {
+      transform: translate(-50% , 0%)  scale(1)
+    }
+  
+    100% {
+      transform: translate(-50%, -100%) scale(0)
+    }
+  }
+ 
+  
+  
+  @font-face {
+    font-family: 'OregonDry Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OregonDry Normal'), url('ORED____.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'OregonDry-Plain Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('OregonDry-Plain Regular'), url('ORD_____.woff') format('woff');
+    }
+
+
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    
+    
+/* Add this in your global CSS file */
+.hover:grayscale-0 {
+  @apply grayscale-0;
+}
+

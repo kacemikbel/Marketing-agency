@@ -1,0 +1,30 @@
+ {
+    "projects": [
+        {
+          "id": "001",
+          "title": "yoga",
+          "description": "A simple yoga website for helping  users to get a full costomization for their yoga plan .",
+          "tags": ["web development", "UI/UX", "backend"]
+        },
+
+
+        {
+
+        "id":"001",
+        "title": "Task management",
+        "description" :" Very usefull task managemnt simple website and  system for users tasks",
+        "tags" : ["frontend","UI/UX","backend" ]
+        },
+
+
+        {
+            "id":"003",
+            "title" :"E-commerce",
+            "description" :" Your one-stop online shop for everything from trendy apparel to tech gadgets",
+            "tags" :["wordpress","durpal","shopify"]
+        },
+    ]
+     
+    "services"
+
+ }

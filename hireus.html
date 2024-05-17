@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Stylish Form</title>
+    <link rel="stylesheet" href="./Assets/css/hire.css">
+</head>
+<body>  
+    
+    <div class="form-container">
+        <form action="./php/service.php" method="POST">
+            <h2>Contact Us</h2>
+
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Telephone Number</label>
+                <input type="tel" name="telephone" id="telephone" required placeholder="123-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+                <div class="container">
+                    <p>Select option</p>
+                    <ul class="ks-cboxtags">
+                    <li><input type="checkbox" id="checkboxOne" name="option" value="Rainbow Dash"><label for="checkboxOne">Rainbow Dash</label></li>
+                    <li><input type="checkbox" id="checkboxTwo" name="option"  value="Cotton Candy" checked><label for="checkboxTwo">Cotton Candy</label></li>
+                    <li><input type="checkbox" id="checkboxThree"name="option"  value="Rarity" checked><label for="checkboxThree">Rarity</label></li>
+                    <li><input type="checkbox" id="checkboxFour" name="option" value="Moondancer"><label for="checkboxFour">Moondancer</label></li>
+                    <li><input type="checkbox" id="checkboxFive"name="option"  value="Surprise"><label for="checkboxFive">Surprise</label></li>
+                    <li><input type="checkbox" id="checkboxSix" name="option" value="Twilight Sparkle" checked><label for="checkboxSix">Twilight
+                                    Sparkle</label></li>
+                    <li><input type="checkbox" id="checkboxSeven"name="option"  value="Fluttershy"><label for="checkboxSeven">Fluttershy</label></li>
+                    <li><input type="checkbox" id="checkboxEight"name="option"  value="Derpy Hooves"><label for="checkboxEight">Derpy Hooves</label></li>
+                    <li><input type="checkbox" id="checkboxNine"name="option"  value="Princess Celestia"><label for="checkboxNine">Princess
+                                    Celestia</label></li>
+                    <li><input type="checkbox" id="checkboxTen" name="option" value="Gusty"><label for="checkboxTen">Gusty</label></li>
+                    <li class="ks-selected"><input type="checkbox"name="option"  id="checkboxEleven" value="Discord"><label for="checkboxEleven">Discord</label></li>
+                    <li><input type="checkbox" id="checkboxTwelve"name="option"  value="Clover"><label for="checkboxTwelve">Clover</label></li>
+                    <li><input type="checkbox" id="checkboxThirteen" name="option" value="Baby Moondancer"><label for="checkboxThirteen">Baby
+                                    Moondancer</label></li>
+                    <li><input type="checkbox" id="checkboxFourteen" value="Medley"><label for="checkboxFourteen">Medley</label></li>
+                    <li><input type="checkbox" id="checkboxFifteen" value="Firefly"><label for="checkboxFifteen">Firefly</label></li>
+                    </ul>
+                
+                </div>
+
+            <div class="submit-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+
+   
+
+
+</body>
+</html>
