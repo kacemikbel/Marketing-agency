@@ -121,5 +121,60 @@
    
     
 
+<footer class="bg-white text-gray-800 pt-8 pb-6 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap justify-between gap-6">
+        <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <img src="./Assets/images/logo.png" alt="Logo" class="h-16 w-auto mb-3"> 
+          <p class="text-sm">Innovating marketing solutions for tomorrow's needs.</p>
+          <div class="mt-3 flex space-x-3"> 
+            <a href="#" class="hover:text-red-500 transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-red-500 transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-red-500 transition duration-300 ease-in-out"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <h3 class="text-lg font-semibold mb-3 hover:underline hover:text-red-500 transition duration-300 ease-in-out">Explore</h3>
+          <ul class="space-y-2">
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="#" class="flex items-center"><i class="fas fa-info-circle mr-2"></i>About Us</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="#ServicesOfUs" class="flex items-center"><i class="fas fa-concierge-bell mr-2"></i>Services</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Blog.html" class="flex items-center"><i class="fas fa-blog mr-2"></i>Blog</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./contact.html" class="flex items-center"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+          </ul>
+        </div>
+  
+        <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <h3 class="text-lg font-semibold mb-3 hover:underline hover:text-red-500 transition duration-300 ease-in-out">Services</h3>
+          <ul class="space-y-2">
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Web.html" class="flex items-center"><i class="fas fa-code mr-2"></i>Web Development</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Marketing.html" class="flex items-center"><i class="fas fa-bullhorn mr-2"></i>Marketing</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Design.html" class="flex items-center"><i class="fas fa-paint-brush mr-2"></i>Design</a></li>
+          </ul>
+        </div>
+  
+        <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
+          <h3 class="text-lg font-semibold mb-3 hover:underline hover:text-red-500 transition duration-300 ease-in-out">Stay Updated</h3>
+          <p class="text-sm mb-2">Subscribe to our newsletter to get the latest updates directly to your inbox.</p>
+          <form class="flex flex-col sm:flex-row gap-2">
+            <input type="email" placeholder="Your Email" class="w-full sm:w-auto px-4 py-2 rounded-l-full text-black focus:outline-none" required>
+            <button type="submit" class="bg-red-500 px-4 py-2 rounded-r-full text-white hover:bg-red-600 transition duration-300 ease-in-out">Subscribe</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="flex justify-end mt-4">
+        <a href="./recrut.html" target="_blank" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-full text-sm font-medium text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 ease-in-out">
+          Join Our Team
+        </a>
+      </div>
+  
+      <div class="border-t border-gray-300 mt-4 pt-4 text-gray-600 text-center text-sm">
+        © 2024 Digital Xtra Design. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+
 </body>
 </html>

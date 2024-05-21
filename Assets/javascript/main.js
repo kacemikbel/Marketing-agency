@@ -157,44 +157,24 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.add('hidden');
     });
 });
-document.addEventListener('DOMContentLoaded', function () {
-    // Select the toggle button
-    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-language"]');
-    // Select the menu
-    const navMenu = document.getElementById('navbar-language');
 
-    // Listen for a click event on the toggle button
-    toggleButton.addEventListener('click', function () {
-        // Toggle the 'hidden' class on the menu
-        navMenu.classList.toggle('hidden');
+    document.addEventListener('DOMContentLoaded', function () {
+        // Select the toggle button
+        const toggleButton = document.querySelector('[data-collapse-toggle="navbar-language"]');
+        // Select the menu
+        const navMenu = document.getElementById('navbar-language');
+
+        // Listen for a click event on the toggle button
+        toggleButton.addEventListener('click', function () {
+            // Toggle the 'hidden' class on the menu
+            navMenu.classList.toggle('hidden');
+            // Toggle the 'aria-expanded' attribute on the button
+            const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+            toggleButton.setAttribute('aria-expanded', !expanded);
+        });
     });
-});
-// the swiper of sponsors
-var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-});
+
+
 
 
 
