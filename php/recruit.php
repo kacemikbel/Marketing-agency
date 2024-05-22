@@ -10,7 +10,7 @@ VALUES ( '$email', '$phone','$file','$imagage')";
 }
 $res = mysqli_query($conn, $sql);
 if ($res) {
-   header('location:../php/service.php');
+   header('location:../recrut.php');
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
