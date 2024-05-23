@@ -15,6 +15,7 @@
             <li><a href="blog.php">Manage Blogs</a></li>
             <li><a href="projects.php">Manage Projects</a></li>
             <li><a href="usersubmission.php">Manage User Submissions</a></li>
+            <li><a href="">Manage recruitment form </a></li>
         </ul>
     </div>
     <div class="content">

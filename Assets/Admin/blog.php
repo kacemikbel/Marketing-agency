@@ -51,6 +51,7 @@ $conn->close();
                                 <p class="text-sm text-gray-500 mt-2"><?php echo date('F d, Y', strtotime($row['date'])); ?></p>
                                 <p class="mt-4 text-gray-600 line-clamp-3" id="post-<?php echo $row['id']; ?>-desc"><?php echo $row['excerpt']; ?></p>
                                 <button onclick="toggleReadMore('post-<?php echo $row['id']; ?>-desc')" class="mt-6 inline-block text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-300">Read More &rarr;</button>
+                                <a href="delete_blog.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this blog post?');" class="mt-6 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">Delete</a>
                             </div>
                         </div>
                     <?php endwhile; ?>

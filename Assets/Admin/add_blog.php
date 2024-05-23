@@ -1,5 +1,9 @@
-<!-- /Assets/Admin/add_blog.php -->
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require '../../php/connectdb.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -8,9 +12,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $excerpt = $_POST['excerpt'];
     $image_url = $_POST['image_url'];
 
+    
+    echo "Title: $title<br>Date: $date<br>Excerpt: $excerpt<br>Image URL: $image_url<br>";
+
     $sql = "INSERT INTO blog_posts (title, date, excerpt, image_url) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
+
+    
+    if ($stmt === false) {
+        die("Error preparing statement: " . $conn->error);
+    }
+
     $stmt->bind_param("ssss", $title, $date, $excerpt, $image_url);
+
     
     if ($stmt->execute()) {
         echo "New blog post added successfully";
@@ -20,9 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $stmt->close();
     $conn->close();
+} else {
+    echo "Invalid request method.";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
