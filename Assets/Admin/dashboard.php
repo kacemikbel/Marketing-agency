@@ -24,6 +24,7 @@ $conn->close();
             <ul>
                 <li class="mb-3"><a href="index.php" class="hover:text-yellow-500">Dashboard</a></li>
                 <li class="mb-3"><a href="blog.php" class="hover:text-yellow-500">Manage Blogs</a></li>
+                <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage projects </a></li>
             </ul>
         </div>
         <div class="content w-3/4 p-8">
