@@ -1,10 +1,20 @@
 <?php 
 include('../../php/connectdb.php');
 
+function getTotalBlogPosts($conn) {
+    $sql = "SELECT COUNT(*) as count FROM blog_posts";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc()['count'];
+}
 
-$sql = "SELECT COUNT(*) as count FROM blog_posts";
-$result = $conn->query($sql);
-$total_blog_posts = $result->fetch_assoc()['count'];
+function getTotalProjects($conn) {
+    $sql = "SELECT COUNT(*) as count FROM projects";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc()['count'];
+}
+
+$totalBlogPosts = getTotalBlogPosts($conn);
+$totalProjects = getTotalProjects($conn);
 
 $conn->close();
 ?>
@@ -16,22 +26,57 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .bg-luxury {
+            background: linear-gradient(45deg, #E8DACE, #DBCBBC);
+        }
+        .sidebar {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .dashboard-title {
+            color: #2c3e50;
+        }
+        .stat-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 9px 12px -1px rgba(0, 0, 0, 0.1);
+        }
+        .stat-card h2 {
+            color: #2c3e50;
+        }
+        .stat-card p {
+            color: #555;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-luxury">
     <div class="flex">
         <div class="sidebar w-1/4 bg-gray-800 text-white h-screen p-5">
             <h2 class="text-2xl font-bold mb-6">Admin Dashboard</h2>
             <ul>
                 <li class="mb-3"><a href="#" class="hover:text-yellow-500">Dashboard</a></li>
                 <li class="mb-3"><a href="blog.php" class="hover:text-yellow-500">Manage Blogs</a></li>
-                <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage projects </a></li>
+                <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage Projects</a></li>
             </ul>
         </div>
         <div class="content w-3/4 p-8">
-            <h1 class="text-3xl font-bold mb-8">Welcome to the Admin Dashboard</h1>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-4">Total Blog Posts</h2>
-                <p class="text-3xl"><?php echo $total_blog_posts; ?></p>
+            <h1 class="dashboard-title text-4xl font-bold mb-8">Welcome to the Admin Dashboard</h1>
+            <div class="flex justify-between">
+                <div class="stat-card w-1/2 shadow-lg mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Total Blog Posts</h2>
+                    <p class="text-3xl"><?php echo $totalBlogPosts; ?></p>
+                </div>
+                <div class="stat-card w-1/2 shadow-lg mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Total Projects</h2>
+                    <p class="text-3xl"><?php echo $totalProjects; ?></p>
+                </div>
             </div>
         </div>
     </div>

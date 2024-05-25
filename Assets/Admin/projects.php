@@ -21,18 +21,18 @@
         <h1 class="text-3xl font-bold mb-8">Manage Projects</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php
-            // Include database connection script
+            
             include('../../php/connectdb.php');
 
-            // Prepare and execute the SQL query to fetch projects
-            $sql = "SELECT id, title, description, image, tags FROM projects";
+            
+            $sql = "SELECT id, title, description, image_url, category1, category2  tags FROM projects";
             $result = $conn->query($sql);
 
-            // Check if there are any results
+        
             if ($result->num_rows > 0) {
-                // Loop through each project and display it
+                
                 while($row = $result->fetch_assoc()) {
-                    $image = htmlspecialchars($row['image']);
+                    $image = htmlspecialchars($row['image_url']);
                     $title = htmlspecialchars($row['title']);
                     $description = htmlspecialchars($row['description']);
                     $tags = explode(',', $row['tags']);
@@ -42,11 +42,13 @@
                         <div class="p-6">
                             <h2 class="text-xl font-bold mb-2"><?php echo $title; ?></h2>
                             <p class="text-gray-600 mb-4"><?php echo $description; ?></p>
+                            
                             <div class="flex flex-wrap">
                                 <?php foreach ($tags as $tag) { ?>
                                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?php echo htmlspecialchars($tag); ?></span>
                                 <?php } ?>
                             </div>
+                            <a href="delete_project.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this projec?');" class="mt-6 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">Delete</a>
                         </div>
                     </div>
                 <?php }
@@ -56,7 +58,7 @@
         </div>
         <div class="mt-8 flex justify-between">
             <a href="add_project.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Project</a>
-            <a href="delete_project.php" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete Project</a>
+           
         </div>
     </div>
 </body>
