@@ -6,7 +6,7 @@
     <title>Admin Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Add custom styles here */
+        
         .card {
             transition: transform 0.3s;
         }
@@ -21,25 +21,30 @@
         <h1 class="text-3xl font-bold mb-8">Manage Projects</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php
-            // Assuming $conn is your database connection
+            // Include database connection script
             include('../../php/connectdb.php');
 
-            // Fetch projects from the database
-            $sql = "SELECT * FROM projects";
+            // Prepare and execute the SQL query to fetch projects
+            $sql = "SELECT id, title, description, image, tags FROM projects";
             $result = $conn->query($sql);
 
+            // Check if there are any results
             if ($result->num_rows > 0) {
+                // Loop through each project and display it
                 while($row = $result->fetch_assoc()) {
+                    $image = htmlspecialchars($row['image']);
+                    $title = htmlspecialchars($row['title']);
+                    $description = htmlspecialchars($row['description']);
+                    $tags = explode(',', $row['tags']);
                     ?>
                     <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                        <img src="<?php echo $row['image']; ?>" alt="<?php echo htmlspecialchars($row['title']); ?>" class="w-full h-64 object-cover object-center">
+                        <img src="<?php echo $image; ?>" alt="<?php echo $title; ?>" class="w-full h-64 object-cover object-center">
                         <div class="p-6">
-                            <h2 class="text-xl font-bold mb-2"><?php echo $row['title']; ?></h2>
-                            <p class="text-gray-600 mb-4"><?php echo $row['description']; ?></p>
+                            <h2 class="text-xl font-bold mb-2"><?php echo $title; ?></h2>
+                            <p class="text-gray-600 mb-4"><?php echo $description; ?></p>
                             <div class="flex flex-wrap">
-                                <?php $tags = explode(',', $row['tags']);
-                                foreach ($tags as $tag) { ?>
-                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?php echo $tag; ?></span>
+                                <?php foreach ($tags as $tag) { ?>
+                                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?php echo htmlspecialchars($tag); ?></span>
                                 <?php } ?>
                             </div>
                         </div>
