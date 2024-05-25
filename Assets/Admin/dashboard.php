@@ -1,7 +1,7 @@
 <?php 
 include('../../php/connectdb.php');
 
-// Fetch total number of blog posts
+
 $sql = "SELECT COUNT(*) as count FROM blog_posts";
 $result = $conn->query($sql);
 $total_blog_posts = $result->fetch_assoc()['count'];
@@ -22,7 +22,7 @@ $conn->close();
         <div class="sidebar w-1/4 bg-gray-800 text-white h-screen p-5">
             <h2 class="text-2xl font-bold mb-6">Admin Dashboard</h2>
             <ul>
-                <li class="mb-3"><a href="index.php" class="hover:text-yellow-500">Dashboard</a></li>
+                <li class="mb-3"><a href="#" class="hover:text-yellow-500">Dashboard</a></li>
                 <li class="mb-3"><a href="blog.php" class="hover:text-yellow-500">Manage Blogs</a></li>
                 <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage projects </a></li>
             </ul>
