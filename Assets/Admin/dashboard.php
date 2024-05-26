@@ -27,7 +27,7 @@ $conn->close();
     <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Custom Styles */
+    
         .bg-luxury {
             background: linear-gradient(45deg, #E8DACE, #DBCBBC);
         }
@@ -66,9 +66,9 @@ $conn->close();
                 <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage Projects</a></li>
             </ul>
         </div>
-        <div class="content w-3/4 p-8">
+        <div class="content w-3/4 p-8 ">
             <h1 class="dashboard-title text-4xl font-bold mb-8">Welcome to the Admin Dashboard</h1>
-            <div class="flex justify-between">
+            <div class="inline-bloxk">
                 <div class="stat-card w-1/2 shadow-lg mb-8">
                     <h2 class="text-2xl font-bold mb-4">Total Blog Posts</h2>
                     <p class="text-3xl"><?php echo $totalBlogPosts; ?></p>

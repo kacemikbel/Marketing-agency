@@ -25,13 +25,7 @@
 <body class="bg-gray-50 font-sans leading-normal tracking-normal">
 
     
-    <section class=" h-96 flex items-center justify-center bg-gradient-to-br from-purple-500 to-pink-500">
-        <div class="text-center text-white fade-in-up">
-            <h1 class="text-6xl font-extrabold mb-4">Discover Our Insights</h1>
-            <p class="text-xl mb-8">Engage with our thoughtfully crafted articles.</p>
-        </div>
-    </section>
-
+    
     <div class="container mx-auto flex flex-wrap py-6">
 
     
