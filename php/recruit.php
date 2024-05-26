@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    
     $image_filename = '';
     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
         $image_filename = basename($_FILES['image']['name']);
