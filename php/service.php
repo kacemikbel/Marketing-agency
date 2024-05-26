@@ -1,20 +1,27 @@
+
 <?php
+
 include('./connectdb.php');
 
-extract($_POST);
-print_r($_POST);
-/*
-if(isset($username) && isset($email) && isset($telephone) && isset($message) && isset($option)  ){
-    $sql = "INSERT INTO `user-sabmittions` 
-VALUES ( '$username', '$email','$tel','$ùessage','$option')";
+$stmt = $conn->prepare("INSERT INTO `user_submission` (username, email, telephone, message, `option`) VALUES (?, ?, ?, ?, ?)");
+if ($stmt === false) {
+    die("Error preparing statement: " . $conn->error);
+}
+$stmt->bind_param("sssss", $username, $email, $telephone, $message, $option);
+
+
+$username = $_POST['username'];
+$email = $_POST['email'];
+$telephone = $_POST['telephone'];
+$message = $_POST['message'];
+$option = $_POST['option'];
+
+if ($stmt->execute()) {
+    echo "New record created successfully";
+} else {
+    echo "Error executing query: " . $stmt->error;
 }
 
-
-$res = mysqli_query($conn, $sql);
-if ($res) {
-   header('location:../php/service.php');
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }*/
-
+$stmt->close();
+$conn->close();
 ?>
