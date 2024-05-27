@@ -12,9 +12,17 @@ function getTotalProjects($conn) {
     $result = $conn->query($sql);
     return $result->fetch_assoc()['count'];
 }
+function getTotalUsersabmission($conn) {
+    $sql= "SELECT COUNT(*) as count FROM user_submission";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc() ['count'];
+
+
+}
 
 $totalBlogPosts = getTotalBlogPosts($conn);
 $totalProjects = getTotalProjects($conn);
+$totalusersubmission=getTotalUsersabmission($conn);
 
 $conn->close();
 ?>
@@ -80,6 +88,10 @@ $conn->close();
                 <div class="stat-card w-1/2 shadow-lg mb-8">
                     <h2 class="text-2xl font-bold mb-4">Total Projects</h2>
                     <p class="text-3xl"><?php echo $totalProjects; ?></p>
+                </div>
+                <div class="stat-card w-1/2 shadow-lg mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Total user submission</h2>
+                    <p class="text-3xl"><?php echo $totalusersubmission; ?></p>
                 </div>
             </div>
         </div>

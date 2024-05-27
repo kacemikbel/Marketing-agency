@@ -30,7 +30,7 @@
 <body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 h-screen flex items-center justify-center">
     <div class="w-full max-w-lg bg-white rounded-lg shadow-2xl p-8 m-4 animate__animated animate__fadeIn" style="animation: slideInFromLeft 1s ease-out;">
         <h2 class="text-3xl font-bold mb-10 text-gray-800 text-center">Join Our Team</h2>
-        <form  method="post" action="./php/recruit.php" class="space-y-6">
+        <form  method="post" action="./php/recruit.php"  enctype="multipart/form-data" class="space-y-6">
             <div>
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email Address</label>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" id="email" type="email" placeholder="you@example.com">

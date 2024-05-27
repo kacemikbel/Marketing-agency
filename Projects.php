@@ -117,7 +117,7 @@ $conn->close();
           <p class="text-sm mb-2">Subscribe to our newsletter to get the latest updates directly to your inbox.</p>
           <form class="flex flex-col sm:flex-row gap-2">
             <input type="email" class="w-full py-2 px-4 rounded-full border border-gray-300 text-gray-800 focus:border-red-500 focus:outline-none transition duration-300 ease-in-out" placeholder="Enter your email">
-            <button type="submit" class="bg-red-500 py-2 rounded-full text-white hover:bg-red-600 transition duration-300 ease-in-out">Subscribe</button>
+            <button type="submit" class="bg-red-500 px-4 py-2 rounded-full text-white hover:bg-red-600 transition duration-300 ease-in-out">Subscribe</button>
           </form>
         </div>
       </div>
