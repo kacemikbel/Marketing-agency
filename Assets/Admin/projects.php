@@ -48,7 +48,8 @@
                                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?php echo htmlspecialchars($tag); ?></span>
                                 <?php } ?>
                             </div>
-                            <a href="delete_project.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this projec?');" class="mt-6 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">Delete</a>
+                            <a href="delete_project.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this projec?');" class="mt-6 p-4 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">Delete</a>
+                            <a href="edit_project.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to edit this projec?');" class="mt-6 p-4 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">edit</a>
                         </div>
                     </div>
                 <?php }

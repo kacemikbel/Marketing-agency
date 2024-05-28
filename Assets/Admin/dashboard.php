@@ -73,7 +73,7 @@ $conn->close();
                 <li class="mb-3"><a href="blog.php" class="hover:text-yellow-500">Manage Blogs</a></li>
                 <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage Projects</a></li>
                 <li class="mb-3"><a href="usersub.php" class="hover:text-yellow-500">Manage user_submission</a></li>
-                <li class="mb-3"><a href="recrut.php" class="hover:text-yellow-500">Manage recrutment</a></li>
+                <li class="mb-3"><a href="recruitement.php" class="hover:text-yellow-500">Manage recrutment</a></li>
 
 
             </ul>
