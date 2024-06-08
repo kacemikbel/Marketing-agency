@@ -26,9 +26,160 @@ $conn->close();
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/css/nav.css">
 </head>
 <body class="bg-gray-300"> 
+<header class="header  navbar shadow-sm ">
+        <nav class="nav p-1  ">
+            <div class="nav__data p-4">
+                <a href="#" class="nav__logo">
+                    <i class="ri-code-s-slash-line"></i> Digital xtra design
+                </a>
 
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+
+                
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                            Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Marketing</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="./Marketing.html" class="dropdown__link"> Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Marketing.html" class="dropdown__link">Digital Strategy</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Marketing.html" class="dropdown__link">Event Marketing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-heart-3-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Web Development</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="./Web.html" class="dropdown__link"> Full-stack-Development </a>
+                                        </li>
+                                        <li>
+                                            <a href="./Web.html" class="dropdown__link">Web Security</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Web.html" class="dropdown__link">Web Servers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-book-mark-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Design</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="./Design.html" class="dropdown__link">Graphic Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Design.html" class="dropdown__link">Decoration and Forniture</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Design.html" class="dropdown__link">Urbain Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="./Design.html" class="dropdown__link">Interior Architecture</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </li>
+
+                  
+                  
+
+                    <li>
+                        <a href="#" class="nav__link">Projects</a>
+                    </li>
+
+                  
+                    <li class="dropdown__item">                        
+                        <div class="nav__link dropdown__button">
+                            Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">About us</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="./Agence.html" class="dropdown__link">Digital Xtra Design</a>
+                                        </li>
+                                     
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shield-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Page</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="./Blog.php" class="dropdown__link">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="./blog.details.php" class="dropdown__link">Blog details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
 <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 <div class="  space-y-20 p-5">
 <?php while($row = $result->fetch_assoc()) { ?>
@@ -133,6 +284,83 @@ $conn->close();
       </div>
     </div>
   </footer>
-
+  
+  <script >
+    /*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId)
+ 
+    toggle.addEventListener('click', () =>{
+        
+        nav.classList.toggle('show-menu')
+        
+        toggle.classList.toggle('show-icon')
+    })
+ }
+ 
+ showMenu('nav-toggle','nav-menu')
+ 
+ 
+ const dropdownItems = document.querySelectorAll('.dropdown__item')
+ 
+ 
+ dropdownItems.forEach((item) =>{
+     const dropdownButton = item.querySelector('.dropdown__button') 
+ 
+     
+     dropdownButton.addEventListener('click', () =>{
+         
+         const showDropdown = document.querySelector('.show-dropdown')
+         
+         
+         toggleItem(item)
+ 
+         
+         if(showDropdown && showDropdown!== item){
+             toggleItem(showDropdown)
+         }
+     })
+ })
+ 
+ 
+ const toggleItem = (item) =>{
+    
+     const dropdownContainer = item.querySelector('.dropdown__container')
+ 
+     
+     if(item.classList.contains('show-dropdown')){
+         dropdownContainer.removeAttribute('style')
+         item.classList.remove('show-dropdown')
+     } else{
+         
+         dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
+         item.classList.add('show-dropdown')
+     }
+ }
+ 
+ 
+ const mediaQuery = matchMedia('(min-width: 1118px)'),
+       dropdownContainer = document.querySelectorAll('.dropdown__container')
+ 
+ 
+ const removeStyle = () =>{
+     
+     if(mediaQuery.matches){
+         
+         dropdownContainer.forEach((e) =>{
+             e.removeAttribute('style')
+         })
+ 
+         
+         dropdownItems.forEach((e) =>{
+             e.classList.remove('show-dropdown')
+         })
+     }
+ }
+ 
+ addEventListener('resize', removeStyle)
+ 
+  </script>
 </body>
 </html>
