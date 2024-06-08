@@ -12,14 +12,14 @@ $email = $_POST['email'];
 $telephone = $_POST['telephone'];
 $message = $_POST['message'];
 
+$success = false;
 
-if(isset($_POST['option']) && is_array($_POST['option'])) {
+if (isset($_POST['option']) && is_array($_POST['option'])) {
     $options = $_POST['option']; 
-
 
     foreach ($options as $option) {
         if ($stmt->execute()) {
-            echo "New record created successfully";
+            $success = true;
         } else {
             echo "Error executing query: " . $stmt->error;
         }
@@ -30,4 +30,15 @@ if(isset($_POST['option']) && is_array($_POST['option'])) {
 
 $stmt->close();
 $conn->close();
+
+if ($success) {
+    echo '<div id="successMessage" style="display: none; text-align: center; margin-top: 20px;">
+            <div style="display: inline-block; padding: 10px 20px; background-color: #38a169; color: white; border-radius: 5px; animation: fadeIn 2s;">
+                Success! Your application has been submitted.
+            </div>
+          </div>
+          <script>
+              document.getElementById("successMessage").style.display = "block";
+          </script>';
+}
 ?>

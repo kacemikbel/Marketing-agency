@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Blog Design</title>
+    <title>DXD blog Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -13,6 +13,7 @@
 <body class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-400 font-sans leading-normal tracking-normal">
 
 <header class="header  navbar shadow-sm ">
+
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
                 <a href="#" class="nav__logo">
@@ -199,7 +200,7 @@
     </style>
   </head>
   <body>
-    <section class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 py-16">
+    <section class="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 py-20 mt-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-5xl font-extrabold text-gray-900">Latest Blog Posts</h2>
@@ -251,7 +252,7 @@
     
   
     <script >
-    /*=============== SHOW MENU ===============*/
+    
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId)
