@@ -20,8 +20,8 @@
 </head>
 <body >
     
-    <header class="header  shadow-sm ">
-        <nav class="nav p-2  ">
+    <header class="header  navbar shadow-sm ">
+        <nav class="nav p-1  ">
             <div class="nav__data">
                 <a href="#" class="nav__logo">
                     <i class="ri-code-s-slash-line"></i> Digital xtra design
@@ -40,7 +40,7 @@
                         <a href="#" class="nav__link">Home</a>
                     </li>
 
-                    <!--=============== DROPDOWN 1 ===============-->
+                
                     <li class="dropdown__item">                      
                         <div class="nav__link dropdown__button">
                             Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
@@ -57,13 +57,13 @@
 
                                     <ul class="dropdown__list">
                                         <li>
-                                            <a href="#" class="dropdown__link"> Digital Marketing</a>
+                                            <a href="./Marketing.html" class="dropdown__link"> Digital Marketing</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Digital Strategy</a>
+                                            <a href="./Marketing.html" class="dropdown__link">Digital Strategy</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Event Marketing</a>
+                                            <a href="./Marketing.html" class="dropdown__link">Event Marketing</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -77,13 +77,13 @@
 
                                     <ul class="dropdown__list">
                                         <li>
-                                            <a href="#" class="dropdown__link"> Full-stack-Development </a>
+                                            <a href="./Web.html" class="dropdown__link"> Full-stack-Development </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Web Security</a>
+                                            <a href="./Web.html" class="dropdown__link">Web Security</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Web Servers</a>
+                                            <a href="./Web.html" class="dropdown__link">Web Servers</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -97,16 +97,16 @@
 
                                     <ul class="dropdown__list">
                                         <li>
-                                            <a href="#" class="dropdown__link">Graphic Design</a>
+                                            <a href="./Design.html" class="dropdown__link">Graphic Design</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Decoration and Forniture</a>
+                                            <a href="./Design.html" class="dropdown__link">Decoration and Forniture</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Urbain Design</a>
+                                            <a href="./Design.html" class="dropdown__link">Urbain Design</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Interior Architecture</a>
+                                            <a href="./Design.html" class="dropdown__link">Interior Architecture</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -116,14 +116,14 @@
                         </div>
                     </li>
 
-                    <!--=============== DROPDOWN 2 ===============-->
+                  
                   
 
                     <li>
                         <a href="#" class="nav__link">Projects</a>
                     </li>
 
-                    <!--=============== DROPDOWN 3 ===============-->
+                  
                     <li class="dropdown__item">                        
                         <div class="nav__link dropdown__button">
                             Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
@@ -140,7 +140,7 @@
 
                                     <ul class="dropdown__list">
                                         <li>
-                                            <a href="#" class="dropdown__link">Digital Xtra Design</a>
+                                            <a href="./Agence.html" class="dropdown__link">Digital Xtra Design</a>
                                         </li>
                                      
                                 </div>
@@ -154,10 +154,10 @@
 
                                     <ul class="dropdown__list">
                                         <li>
-                                            <a href="#" class="dropdown__link">Blog</a>
+                                            <a href="./Blog.php" class="dropdown__link">Blog</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Blog details</a>
+                                            <a href="./blog.details.php" class="dropdown__link">Blog details</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -168,7 +168,7 @@
             </div>
         </nav>
     </header>
-    
+   
 
   
     <section class="relative bg-gradient-to-r from-blue-600 to-red-600 overflow-hidden lg:py-24">
@@ -206,53 +206,52 @@
     </section>
     
     
-<style>
-    @keyframes fadeInDown {
-        0% {
-            opacity: 0;
-            transform: translateY(-20px);
+    <style>
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 1s ease-in-out;
         }
-    }
-    
-    .animate-fadeInDown {
-        animation: fadeInDown 1s ease-in-out;
-    }
-    
-    .animate-rotate-and-float {
-        animation: rotateAndFloat 10s ease-in-out infinite;
-    }
-    
-    @keyframes rotateAndFloat {
-        0%, 100% {
-            transform: rotate(0deg) translateY(0px);
+        
+        .animate-rotate-and-float {
+            animation: rotateAndFloat 10s ease-in-out infinite;
         }
-        50% {
-            transform: rotate(30deg) translateY(-10px);
+        
+        @keyframes rotateAndFloat {
+            0%, 100% {
+                transform: rotate(0deg) translateY(0px);
+            }
+            50% {
+                transform: rotate(30deg) translateY(-10px);
+            }
         }
-    }
-    
-    .animate-bounce-slow {
-        animation: bounceSlow 2s infinite;
-    }
-    
-    @keyframes bounceSlow {
-        0%, 100% {
-            transform: translateY(0);
+        
+        .animate-bounce-slow {
+            animation: bounceSlow 2s infinite;
         }
-        50% {
-            transform: translateY(-10px);
+        
+        @keyframes bounceSlow {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
         }
-    }
-    
-    .hover\\:scale-125:hover {
-        transform: scale(1.25);
-    }
-</style>
-
+        
+        .hover\\:scale-125:hover {
+            transform: scale(1.25);
+        }
+    </style>
 
 
 <section class="bg-gray-100">
