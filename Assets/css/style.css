@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
 
-body{
-  font-family: "OregonDry Normal", !important;
-  font-weight: 400;
-  font-style: normal;
-}
+
 .loader {
     display: block;
     width: 84px;

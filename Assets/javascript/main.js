@@ -1,180 +1,75 @@
-// code for english and french toggle jwo bhy
-document.getElementById('language-toggle').addEventListener('click', function () {
-    document.getElementById('language-toggle').classList.add('hidden')
-    document.getElementById('french-toggle').classList.remove('hidden')
-  })
-  
-  document.getElementById('french-toggle').addEventListener('click', function () {
-    document.getElementById('french-toggle').classList.add('hidden')
-    document.getElementById('language-toggle').classList.remove('hidden')
-  })
-  // code foe services dropdown jwo bhy
-  document.addEventListener('DOMContentLoaded', function() {
-    const servicesLink = document.querySelector('#serviceToggle');
-    const servicesDropdown = document.getElementById('services-dropdown');
-
-    servicesLink.addEventListener('mouseenter', function() {
-        servicesDropdown.classList.remove('hidden');
-    });
-
-    servicesLink.addEventListener('mouseleave', function(event) {
-        
-        if (!servicesDropdown.contains(event.relatedTarget)) {
-            servicesDropdown.classList.add('hidden');
-        }
-    });
-
-    servicesDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    servicesDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-});
-
-// code for services dropdown jwo bhy
-document.addEventListener('DOMContentLoaded', function() {
-    
-    const servicesLink = document.querySelector('li.relative > a.nav-link');
-    const servicesDropdown = document.getElementById('services-dropdown');
-
-    servicesLink.addEventListener('mouseenter', function() {
-        servicesDropdown.classList.remove('hidden');
-    });
-
-    servicesLink.addEventListener('mouseleave', function(event) {
-        if (!servicesDropdown.contains(event.relatedTarget)) {
-            servicesDropdown.classList.add('hidden');
-        }
-    });
-
-    servicesDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    servicesDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-
-    // Code for Marketing dropdown jwo bhy
-
-    const marketingLink = document.querySelector('#services-dropdown > li.relative > a.nav-link');
-    const marketingDropdown = marketingLink.nextElementSibling;
-
-    marketingLink.addEventListener('mouseenter', function() {
-        marketingDropdown.classList.remove('hidden');
-    });
-
-    marketingLink.addEventListener('mouseleave', function(event) {
-        if (!marketingDropdown.contains(event.relatedTarget)) {
-            marketingDropdown.classList.add('hidden');
-        }
-    });
-
-    marketingDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    marketingDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-});
-//  code for design drop down  jwo bhy
-document.addEventListener('DOMContentLoaded', function() {
-const designLink = document.querySelector('#services-dropdown > li.relative:nth-child(2) > a.nav-link');
-    const designDropdown = designLink.nextElementSibling;
-
-    designLink.addEventListener('mouseenter', function() {
-        designDropdown.classList.remove('hidden');
-    });
-
-    designLink.addEventListener('mouseleave', function(event) {
-        if (!designDropdown.contains(event.relatedTarget)) {
-            designDropdown.classList.add('hidden');
-        }
-    });
-
-    designDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    designDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-});
-
-   // Code for Web Development dropdown jwo bhy
-document.addEventListener('DOMContentLoaded', function() {
-    
-
-    
-    const webDevLink = document.querySelector('#services-dropdown > li.relative:nth-child(3) > a.nav-link');
-    const webDevDropdown = webDevLink.nextElementSibling;
-
-    webDevLink.addEventListener('mouseenter', function() {
-        webDevDropdown.classList.remove('hidden');
-    });
-
-    webDevLink.addEventListener('mouseleave', function(event) {
-        if (!webDevDropdown.contains(event.relatedTarget)) {
-            webDevDropdown.classList.add('hidden');
-        }
-    });
-
-    webDevDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    webDevDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-});
-// code for page dropdown menu jwo bhy
-
-    
-document.addEventListener('DOMContentLoaded', function() {
-    const pageLink = document.querySelector('#pageToggle');
-    const pageDropdown = document.getElementById('page-dropdown');
-
-    pageLink.addEventListener('mouseenter', function() {
-        console.log("ttt")
-        pageDropdown.classList.remove('hidden');
-    });
-
-    pageLink.addEventListener('mouseleave', function(event) {
-        
-        if (!pageDropdown.contains(event.relatedTarget)) {
-            pageDropdown.classList.add('hidden');
-        }
-    });
-
-    pageDropdown.addEventListener('mouseenter', function() {
-        this.classList.remove('hidden');
-    });
-
-    pageDropdown.addEventListener('mouseleave', function() {
-        this.classList.add('hidden');
-    });
-});
-
-    document.addEventListener('DOMContentLoaded', function () {
-        // Select the toggle button
-        const toggleButton = document.querySelector('[data-collapse-toggle="navbar-language"]');
-        // Select the menu
-        const navMenu = document.getElementById('navbar-language');
-
-        // Listen for a click event on the toggle button
-        toggleButton.addEventListener('click', function () {
-            // Toggle the 'hidden' class on the menu
-            navMenu.classList.toggle('hidden');
-            // Toggle the 'aria-expanded' attribute on the button
-            const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
-            toggleButton.setAttribute('aria-expanded', !expanded);
-        });
-    });
-
-
-
-
-
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId)
+ 
+    toggle.addEventListener('click', () =>{
+        // Add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
+        // Add show-icon to show and hide menu icon
+        toggle.classList.toggle('show-icon')
+    })
+ }
+ 
+ showMenu('nav-toggle','nav-menu')
+ 
+ /*=============== SHOW DROPDOWN MENU ===============*/
+ const dropdownItems = document.querySelectorAll('.dropdown__item')
+ 
+ // 1. Select each dropdown item
+ dropdownItems.forEach((item) =>{
+     const dropdownButton = item.querySelector('.dropdown__button') 
+ 
+     // 2. Select each button click
+     dropdownButton.addEventListener('click', () =>{
+         // 7. Select the current show-dropdown class
+         const showDropdown = document.querySelector('.show-dropdown')
+         
+         // 5. Call the toggleItem function
+         toggleItem(item)
+ 
+         // 8. Remove the show-dropdown class from other items
+         if(showDropdown && showDropdown!== item){
+             toggleItem(showDropdown)
+         }
+     })
+ })
+ 
+ // 3. Create a function to display the dropdown
+ const toggleItem = (item) =>{
+     // 3.1. Select each dropdown content
+     const dropdownContainer = item.querySelector('.dropdown__container')
+ 
+     // 6. If the same item contains the show-dropdown class, remove
+     if(item.classList.contains('show-dropdown')){
+         dropdownContainer.removeAttribute('style')
+         item.classList.remove('show-dropdown')
+     } else{
+         // 4. Add the maximum height to the dropdown content and add the show-dropdown class
+         dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
+         item.classList.add('show-dropdown')
+     }
+ }
+ 
+ /*=============== DELETE DROPDOWN STYLES ===============*/
+ const mediaQuery = matchMedia('(min-width: 1118px)'),
+       dropdownContainer = document.querySelectorAll('.dropdown__container')
+ 
+ // Function to remove dropdown styles in mobile mode when browser resizes
+ const removeStyle = () =>{
+     // Validate if the media query reaches 1118px
+     if(mediaQuery.matches){
+         // Remove the dropdown container height style
+         dropdownContainer.forEach((e) =>{
+             e.removeAttribute('style')
+         })
+ 
+         // Remove the show-dropdown class from dropdown item
+         dropdownItems.forEach((e) =>{
+             e.classList.remove('show-dropdown')
+         })
+     }
+ }
+ 
+ addEventListener('resize', removeStyle)
+ 
