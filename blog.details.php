@@ -43,7 +43,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="/index.html" class="nav__link">Home</a>
                     </li>
 
                 
@@ -126,7 +126,7 @@
                   
 
                     <li>
-                        <a href="#" class="nav__link">Projects</a>
+                        <a href="./Projects.php" class="nav__link">Projects</a>
                     </li>
 
                   
@@ -283,9 +283,8 @@
           <h3 class="text-lg font-semibold mb-3 hover:underline hover:text-red-500 transition duration-300 ease-in-out">Explore</h3>
           <ul class="space-y-2">
             <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="#" class="flex items-center"><i class="fas fa-info-circle mr-2"></i>About Us</a></li>
-            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="#ServicesOfUs" class="flex items-center"><i class="fas fa-concierge-bell mr-2"></i>Services</a></li>
-            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Blog.html" class="flex items-center"><i class="fas fa-blog mr-2"></i>Blog</a></li>
-            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./contact.html" class="flex items-center"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Blog.php" class="flex items-center"><i class="fas fa-blog mr-2"></i>Blog</a></li>
+          
           </ul>
         </div>
   
@@ -309,7 +308,7 @@
       </div>
   
       <div class="flex justify-end mt-4">
-        <a href="./recrut.html" target="_blank" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-full text-sm font-medium text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 ease-in-out">
+        <a href="./recrut.php" target="_blank" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-full text-sm font-medium text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 ease-in-out">
           Join Our Team
         </a>
       </div>

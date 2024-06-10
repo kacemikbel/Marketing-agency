@@ -48,7 +48,7 @@ $conn->close();
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="./index.html" class="nav__link">Home</a>
                     </li>
 
                 
@@ -131,7 +131,7 @@ $conn->close();
                   
 
                     <li>
-                        <a href="#" class="nav__link">Projects</a>
+                        <a href="./Projects.php" class="nav__link">Projects</a>
                     </li>
 
                   
@@ -183,18 +183,18 @@ $conn->close();
 <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 <div class="  space-y-20 p-5">
 <?php while($row = $result->fetch_assoc()) { ?>
-<section class="flex flex-col  justify-center antialiased mt-4 text-gray-900 "> 
-    <div class="max-w-6xl m p-4 sm:px-6 h-full">
+<section class="flex flex-col  justify-center antialiased  text-gray-900 "> 
+    <div class="max-w-6xl mt-12 sm:px-6 h-full">
         
-        <article class="max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
-            <a class="relative block group" href="#0">
+        <article class="max-w-sm   md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
+            <a class="relative m-4 block group" href="#0">
                 <div class="absolute inset-0 bg-gray-800 hidden md:block transform md:translate-y-2 md:translate-x-4 xl:translate-y-4 xl:translate-x-8 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out pointer-events-none" aria-hidden="true"></div>
-                <figure class="relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
+                <figure class="relative  h-0 pb-[75%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
                     <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="<?= $row['image_url']; ?>" width="540" height="303" alt="Blog post">
                 </figure>
             </a>
             <div>
-                <header>
+                <section>
                 <div class="mb-3">
     <ul class="flex flex-wrap gap-3 text-sm font-medium">
         <li>
@@ -209,7 +209,7 @@ $conn->close();
                     <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-2">
                         <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0"><?php echo $row['title']; ?></a>
                     </h3>
-                </header>
+                </section>
                 <p class="text-lg text-gray-600 flex-grow"><?php echo $row['description']; ?></p> 
             </div>
         </article>    
@@ -248,7 +248,7 @@ $conn->close();
           <h3 class="text-lg font-semibold mb-3 hover:underline hover:text-red-500 transition duration-300 ease-in-out">Explore</h3>
           <ul class="space-y-2">
             <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Agence.html" class="flex items-center"><i class="fas fa-info-circle mr-2"></i>About Us</a></li>
-            <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="#ServicesOfUs" class="flex items-center"><i class="fas fa-concierge-bell mr-2"></i>Services</a></li>
+         
             <li class="hover:text-red-500 transition duration-300 ease-in-out"><a href="./Blog.php" class="flex items-center"><i class="fas fa-blog mr-2"></i>Blog</a></li>
          
           </ul>
@@ -274,7 +274,7 @@ $conn->close();
       </div>
   
       <div class="flex justify-end mt-4">
-        <a href="./recrut.html" target="_blank" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-full text-sm font-medium text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 ease-in-out">
+        <a href="./recrut.php" target="_blank" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 h-10 inline-flex items-center justify-center px-6 py-2 border-0 rounded-full text-sm font-medium text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-300 ease-in-out">
           Join Our Team
         </a>
       </div>
