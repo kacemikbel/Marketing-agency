@@ -52,7 +52,7 @@ $conn->close();
                     </li>
 
                 
-                    <li class="dropdown__item">                      
+                    <li class="dropdown__item ">                      
                         <div class="nav__link dropdown__button">
                             Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                         </div>
@@ -181,7 +181,7 @@ $conn->close();
     </header>
    
 <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-<div class="  space-y-20 p-5">
+<div class="  space-y-20 mt-12">
 <?php while($row = $result->fetch_assoc()) { ?>
 <section class="flex flex-col  justify-center antialiased  text-gray-900 "> 
     <div class="max-w-6xl mt-12 sm:px-6 h-full">
@@ -195,8 +195,8 @@ $conn->close();
             </a>
             <div>
                 <section>
-                <div class="mb-3">
-    <ul class="flex flex-wrap gap-3 text-sm font-medium">
+                <div class="mb-3 ">
+    <ul class="flex flex-wrap gap-3 text-sm ml-12 font-medium">
         <li>
             <a class=" inline-block text-center text-white py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out" href="#0"><?php echo $row['category1']; ?></a>
         </li>
@@ -206,11 +206,11 @@ $conn->close();
     </ul>
 </div> 
 
-                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-2">
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-2 ml-12">
                         <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0"><?php echo $row['title']; ?></a>
                     </h3>
                 </section>
-                <p class="text-lg text-gray-600 flex-grow"><?php echo $row['description']; ?></p> 
+                <p class="text-lg ml-12 text-gray-600 flex-grow"><?php echo $row['description']; ?></p> 
             </div>
         </article>    
     </div>
