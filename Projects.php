@@ -28,6 +28,7 @@ $conn->close();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="./Assets/images/logo.png">
     <link rel="stylesheet" href="./Assets/css/nav.css">
 </head>
 <body class="bg-gray-300"> 

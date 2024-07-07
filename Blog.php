@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/nav.css">
+    <link rel="icon" href="./Assets/images/logo.png">
     
 </head>
 <body class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-400 font-sans leading-normal tracking-normal">
