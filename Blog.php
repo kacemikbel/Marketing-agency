@@ -16,7 +16,7 @@
 
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
-                <a href="#" class="nav__logo">
+                <a href="./index.html" class="nav__logo">
                     <i class="ri-code-s-slash-line"></i> Digital xtra design
                 </a>
 

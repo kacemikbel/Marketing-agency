@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="./Assets/javascript/service.js"></script>
     <link rel="stylesheet" href="./Assets/css/nav.css">
     
     <style>
@@ -20,7 +21,7 @@
     <header class="header  navbar shadow-sm ">
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
-                <a href="#" class="nav__logo">
+                <a href="./index.html" class="nav__logo">
                     <i class="ri-code-s-slash-line"></i> Digital xtra design
                 </a>
 
@@ -394,22 +395,22 @@ const showMenu = (toggleId, navId) =>{
  }
  
  addEventListener('resize', removeStyle)
-
-
-
  document.querySelectorAll('.learn-more').forEach(link => {
-        link.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            const moreInfo = document.getElementById(targetId);
-            if (moreInfo.classList.contains('hidden')) {
-                moreInfo.classList.remove('hidden');
-                this.innerHTML = 'Show Less <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>';
-            } else {
-                moreInfo.classList.add('hidden');
-                this.innerHTML = 'Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>';
-            }
-        });
+    link.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const moreInfo = document.getElementById(targetId);
+        if (moreInfo.classList.contains('hidden')) {
+            moreInfo.classList.remove('hidden');
+            this.innerHTML = 'Show Less <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>';
+        } else {
+            moreInfo.classList.add('hidden');
+            this.innerHTML = 'Learn More <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>';
+        }
     });
+});
+
+
+
  
   </script>
 </body>
