@@ -195,7 +195,7 @@
                         By <a href="#" class="font-semibold hover:text-gray-800">Author Name</a>, Published on April 25th, 2024
                     </p>
                     <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel dui et lorem consequat lobortis in id orci. Nunc consectetur, erat eget ullamcorper ullamcorper, erat quam aliquet nisi, at molestie nulla metus eu nunc. Vivamus eget placerat ante Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum debitis aspernatur voluptas voluptatem deserunt, suscipit dolores provident, architecto sit autem repellat ullam? Suscipit maiores esse reiciendis dolorum reprehenderit quisquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iste accusantium libero, magnam et laudantium laborum odit mollitia, similique, quasi illo velit. Explicabo soluta officia sunt esse placeat in Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, mollitia placeat. Dignissimos placeat, nisi laudantium sed iusto minus, ipsam unde nihil aliquid eos harum expedita aliquam eius vel possimus esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto enim corporis, ex esse debitis quo. Dicta ipsum veritatis porro ratione aspernatur consequuntur laudantium non assumenda facere, impedit vitae adipisci voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae perferendis, laudantium vero, iure reiciendis veniam reprehenderit labore cupiditate corporis quas odio in beatae eius totam? Expedita accusantium doloribus perspiciatis?</a>
-                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                   
                 </div>
             </article>
 
@@ -255,7 +255,7 @@
                         <label for="message" class="block font-medium text-gray-700">Message</label>
                         <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-lg border-0 bg-gray-50 shadow-sm focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition duration-300 ease-in-out" placeholder="Your engaging comment..."></textarea>
                     </div>
-                    <button type="submit" class="w-full text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-lg px-5 py-3 text-center transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50">Submit Comment</button>
+                    <button type="submit" class="w-full text-white bg-red-600  hover:bg-pink-600 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-lg px-5 py-3 text-center transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50">Submit Comment</button>
                 </form>
             </div>
             
