@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/nav.css">
     <link rel="icon" href="./Assets/images/logo.png">
@@ -31,7 +31,7 @@
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
                 <a href="./index.html" class="nav__logo">
-                    <i class="ri-code-s-slash-line"></i> Digital xtra design
+                   <img src="./Assets/images/logof.png" class="w-28" alt="logo">
                 </a>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -271,7 +271,7 @@
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-wrap justify-between gap-6">
         <div class="w-full lg:w-1/4 mb-4 lg:mb-0">
-          <img src="./Assets/images/logo.png" alt="Logo" class="h-16 w-auto mb-3"> 
+          <img src="./Assets/images/logof.png" alt="Logo" class="h-16 w-auto mb-3"> 
           <p class="text-sm">Innovating marketing solutions for tomorrow's needs.</p>
           <div class="mt-3 flex space-x-3"> 
             <a href="#" class="hover:text-red-500 transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
