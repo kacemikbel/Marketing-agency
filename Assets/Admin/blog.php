@@ -53,6 +53,7 @@ $conn->close();
                                 <button onclick="toggleReadMore('post-<?php echo $row['id']; ?>-desc')" class="mt-6 inline-block text-indigo-600 font-semibold hover:text-indigo-800 transition-colors duration-300">Read More &rarr;</button>
                                 <a href="delete_blog.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this blog post?');" class="mt-6 inline-block text-red-500 hover:text-red-700 transition-colors duration-300">Delete</a>
                                 <a href="edit_blog.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to edit this blog post?');" class="mt-6 p-4 inline-block text-blue-500 hover:text-red-700 transition-colors duration-300">edit</a>
+                                <a href="add_blogdetails.php"=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want add this blog post to blog details ?');" class="mt-6 p-4 inline-block text-blue-500 hover:text-red-700 transition-colors duration-300">add as a detailed blog </a>
                             </div>
                         </div>
                     <?php endwhile; ?>
@@ -84,5 +85,6 @@ $conn->close();
     </script>
     
     <a href="add_blog.php" class="bg-blue-500 text-white px-4 py-2 rounded">Add Blog</a>
+    
 </body>
 </html>

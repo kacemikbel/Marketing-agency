@@ -30,7 +30,7 @@
 <header class="header  navbar shadow-sm ">
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
-                <a href="./index.html" class="nav__logo">
+                <a href="./index.html" class="nav__logo w-28">
                    <img src="./Assets/images/logof.png" class="w-28" alt="logo">
                 </a>
 
@@ -186,16 +186,59 @@
             <article class="flex flex-col shadow my-4">
         
                 <a href="#" class="hover:opacity-75">
-                    <img src="./Assets/images/blog.jpeg" alt="">
+                    <img src="./Assets/images/blog1.jpeg" alt="">
                 </a>
                 <div class="bg-white flex flex-col justify-start p-6">
                     <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a>
                     <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Innovative Solutions for Modern Problems</a>
                     <p class="text-sm pb-3">
-                        By <a href="#" class="font-semibold hover:text-gray-800">Author Name</a>, Published on April 25th, 2024
+                        By <a href="#" class="font-semibold hover:text-gray-800">El kamel</a>, Published on April 25th, 2024
                     </p>
-                    <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel dui et lorem consequat lobortis in id orci. Nunc consectetur, erat eget ullamcorper ullamcorper, erat quam aliquet nisi, at molestie nulla metus eu nunc. Vivamus eget placerat ante Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum debitis aspernatur voluptas voluptatem deserunt, suscipit dolores provident, architecto sit autem repellat ullam? Suscipit maiores esse reiciendis dolorum reprehenderit quisquam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iste accusantium libero, magnam et laudantium laborum odit mollitia, similique, quasi illo velit. Explicabo soluta officia sunt esse placeat in Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, mollitia placeat. Dignissimos placeat, nisi laudantium sed iusto minus, ipsam unde nihil aliquid eos harum expedita aliquam eius vel possimus esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto enim corporis, ex esse debitis quo. Dicta ipsum veritatis porro ratione aspernatur consequuntur laudantium non assumenda facere, impedit vitae adipisci voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae perferendis, laudantium vero, iure reiciendis veniam reprehenderit labore cupiditate corporis quas odio in beatae eius totam? Expedita accusantium doloribus perspiciatis?</a>
-                   
+                    <a href="#" class="pb-6">I watched IBM Think last week. As I listened to IBM CEO Arvind Krishna talk about how IBM is willing to configure hardware, software, and services for every customer, it struck me that the one thing we are not doing with AI is thinking it through. We are throwing AI at everything and not prioritizing where we need it to focus.
+
+We had the same issue with nuclear energy early on. We could focus it on safe, low-cost energy generation or on destroying the planet. We initially focused on destroying the planet, followed by unsafe energy generation (Chernobyl, Three Mile Island).
+
+A meme on social media says, “I want AI to do my laundry and dishes so that I can do art and writing, not for AI to do my art and writing so that I can do my laundry and dishes.”
+
+Let’s explore this lack of thinking about AI use in the context of last week’s announcement at Computex of the impressive Intel Lunar Lake platform.
+
+We’ll close with my Product of the Week, “Trustworthy,” which exemplifies a better direction for AI and will help us better prepare for the future problems that all our families might face.
+
+IBM Think
+The Think slogan goes back to Thomas Watson, Sr. In 1915, as a sales manager for NCR, he developed the saying after becoming frustrated that no one on his executive team seemed to have any ideas. He argued, “The trouble with every one of us is that we don’t think enough. We don’t get paid for working with our feet — we get paid for working with our heads.”
+
+This lack of thinking is what we’re not addressing when it comes to AI.
+
+Like any powerful tool, AI is neither good nor bad. Like nuclear technology, it depends on how the technology is used. Currently, there is a lot of focus on building ever more powerful AI weapons, some of which are pretty scary. This drone-delivered weaponized Chinese robotic dog could be a scene from “The Terminator,” and that is far from the only example.
+
+Back at the Beginning and IBM Watson
+When IBM started Watson, it was accidentally focused on winning game shows to demonstrate its capabilities. However, much of the initial work was on providing better and more timely medical advice.
+
+While IBM’s inability to reliably access medical data and the potential liability of getting that wrong forced it to pivot away from this market, it did highlight that IBM was following the “Think” process because better medical care should be an exceedingly high, if not the highest, priority. It should come way before AI weapons systems.
+
+Medical costs, particularly here in the U.S., are incredibly high, while medical quality is largely deficient, which seems like the worst of all worlds. AI could address the cost and the quality of medical services, but right now, that does not appear to be a top priority, giving way to the more troubling uses of AI.
+
+I think rather than focusing on throwing AI at everything, we should have a priority list of things we want AI to do. Toward the top would be a far better digital assistant.
+
+Lunar Lake vs. Snapdragon X Elite
+Your digital assistant will need to be with you while you work, and much of our initial AI use will be tied to making us more productive. However, we need to push up the quality requirements of this effort because, in the last head-to-head comparison, Microsoft Copilot ranked last. It is interesting to note that the current iteration of ChatGPT, which is the basis of Copilot, ranked second while Perplexity ranked first. We don’t only need AI with us; we need the information it provides to be accurate and useful, and right now, Copilot is falling short.
+
+Copilot+, which includes Recall and Cocreator, was designed to work on Qualcomm’s Snapdragon X Elite processor, and initially, both AMD and Intel were bypassed. However, both companies have put in a ton of work to close this gap, and it looks like the next big AI chip drop will come from Intel and its high-end client processors code-named Lunar Lake.
+
+Lunar Lake represents a massive effort from Intel and brings to market a level of capability we weren’t expecting until 2026. Still, it will also be more expensive, allowing Qualcomm to likely own mainstream notebooks until AMD’s more affordable alternative comes to market.
+
+However, and this again goes to priorities, you’d think workstations and desktop PCs would have been prioritized because that is where professional creators still live, and even workstation laptops aren’t included in the initial Copilot+ efforts. The closest thing to a Copilot+ workstation is the Qualcomm Snapdragon Dev Kit for Windows which people who want this AI functionality in a desktop are buying up.
+
+Given that desktops and workstations don’t require the power of laptops and are used by developers, who are more Microsoft’s primary customers than end users, you’d think desktop and laptop workstations would be a priority. Nvidia prevailed on Microsoft to embrace their platform, and AMD is right there with them, but with a gaming focus.
+
+Focusing on gaming is important because smart non-player characters (NPCs) could make an enormous difference in games, both as opponents and partners. Imagine, for instance, having a bonded pet like a dragon that could fight and protect you intelligently, let alone an in-game helper who could guide you through some of the more challenging puzzles (I hate puzzles in games).
+
+Wrapping Up: AI Priorities
+
+Back to priorities: I think AI should first help us make better decisions and then focus on those things that take the pleasure out of life, like cleaning, doing the laundry, driving in traffic, checking our work (but not doing it for us), and helping us form better relationships or make relationships work.
+
+In the end, AI could make the world a better place or one that was much, much worse. Personally, I’d prefer the former over the latter. I don’t need more difficulty in my life, but I could certainly use more help.</a>
+<a href="./blog.details.php" class="inline-block text-white bg-red-600 hover:bg-pink-600 font-medium rounded-lg text-lg px-5 py-3 text-center transition duration-300 ease-in-out shadow-lg hover:shadow-pink-500/50">Read More</a>
                 </div>
             </article>
 
@@ -236,7 +279,7 @@
                 <p class="text-xl font-semibold pb-5">About Me</p>
                 <img class="w-20 h-20 rounded-full mx-auto" src="./Assets/images/web.png" alt="Profile photo">
                 <div class="text-center mt-5">
-                    <p class="text-gray-900 leading-tight">Hi! I'm <strong>Author Name</strong>. Passionate about technology and innovation, I love to share my insights and discoveries with the world through my blog.</p>
+                    <p class="text-gray-900 leading-tight">Hi! I'm <strong>El kamel</strong>. Passionate about technology and innovation, I love to share my insights and discoveries with the world through my blog.</p>
                 </div>
             </div>
 
@@ -395,6 +438,12 @@ const showMenu = (toggleId, navId) =>{
  }
  
  addEventListener('resize', removeStyle)
+
+
+
+ document.getElementById("nav-toggle").addEventListener("click", function() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        });
  
   </script>
 

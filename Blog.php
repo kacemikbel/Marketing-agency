@@ -17,7 +17,7 @@
 
         <nav class="nav p-1  ">
             <div class="nav__data p-4">
-                <a href="./index.html" class="nav__logo">
+                <a href="./index.html" class="nav__logo w-28">
                   <img src="./Assets/images/logof.png" class="w-28" alt="logo">
                 </a>
                 <div class="nav__toggle" id="nav-toggle">

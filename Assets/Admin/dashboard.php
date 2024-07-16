@@ -117,6 +117,7 @@ $conn->close();
             <li class="mb-3"><a href="projects.php" class="hover:text-yellow-500">Manage Projects</a></li>
             <li class="mb-3"><a href="usersub.php" class="hover:text-yellow-500">Manage User Submissions</a></li>
             <li class="mb-3"><a href="recruitment.php" class="hover:text-yellow-500">Manage Recruitment</a></li>
+        
         </ul>
     </div>
     <div class="content w-3/4 p-8">

@@ -35,7 +35,7 @@ $conn->close();
 <header class="header  navbar shadow-sm ">
         <nav class="nav p-1 ">
             <div class="nav__data p-4">
-                <a href="./index.html" class="nav__logo">
+                <a href="./index.html" class="nav__logo w-28">
                     <img src="./Assets/images/logof.png" class="w-28" alt="logo">
                 </a>
 
@@ -218,7 +218,7 @@ $conn->close();
 </section>
 <?php } ?>
 
-<div class="flex justify-center mt-6">
+<div class="flex justify-center mt-8 ">
     <?php if($page > 1): ?>
         <a href="?page=<?php echo $page-1; ?>" class="bg-gray-800 text-white px-4 py-2 rounded-md mx-1">Previous</a>
     <?php endif; ?>
